@@ -6,8 +6,6 @@ const projectId: string = process.env.NEXT_PUBLIC_PROJECT_ID
   ? process.env.NEXT_PUBLIC_PROJECT_ID
   : "";
 
-console.log(projectId);
-
 const config = defineConfig({
   projectId: projectId,
   dataset: "production",
