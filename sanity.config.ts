@@ -16,6 +16,4 @@ const config = defineConfig({
   schema: { types: schemas },
 });
 
-console.log(config);
-
 export default config;
