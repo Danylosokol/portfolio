@@ -5,7 +5,7 @@ export default async function Home() {
   const projects: Project[] = await getProjects();
 
   return (
-    <div>
+    <div className="mt-1">
       {projects.map((project: Project) => (
         <div key={project._id}>{project.name}</div>
       ))}
