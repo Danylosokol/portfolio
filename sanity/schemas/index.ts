@@ -1,5 +1,5 @@
-import project from "./project-schema";
+import profile from "./profile";
 
-const schemas = [project];
+const schemas = [profile];
 
 export default schemas;
