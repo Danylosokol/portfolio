@@ -17,3 +17,31 @@ export type ProfileType = {
   socialLinks: string[],
   skills: string[],
 }
+
+export type JobType = {
+  _id: string;
+  name: string;
+  jobTitle: string;
+  companyUrl: string;
+  logo: string;
+  url: string;
+  description: PortableTextBlock[];
+  startDate: Date;
+  endDate: Date;
+}
+
+export type ProjectType = {
+  _id: string;
+  name: string;
+  tagline: string;
+  slug: string;
+  projectImage: {
+    alt: string;
+    image: string;
+  }
+  projectUrl: string;
+  projectGithub: string;
+  shortDescription: string;
+  fullDescription: string;
+  technologies: string[];
+}
