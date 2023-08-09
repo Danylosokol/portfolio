@@ -43,7 +43,7 @@ export async function getProjects(): Promise<ProjectType[]>{
       name,
       tagline,
       slug,
-      projectImage: {alt, "image": asset->url},
+      projectImage {alt, "image": asset->url},
       projectUrl,
       projectGithub,
       shortDescription,

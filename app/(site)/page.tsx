@@ -1,7 +1,8 @@
 import { getProfile } from "@/sanity/sanity.query";
 import type { ProfileType } from "@/types";
 import Hero from "./components/main/Hero";
-import Job from "./components/main/Job";
+import Jobs from "./components/main/Jobs";
+import Projects from "./components/main/Projects";
 
 export default async function Home() {
   const profile: ProfileType[] = await getProfile();
@@ -14,7 +15,8 @@ export default async function Home() {
             <Hero data={data}/>
           ))}
       </section>
-      <Job skills={profile[0].skills}/>
+      <Jobs skills={profile[0].skills}/>
+      <Projects />
     </main>
   );
 }

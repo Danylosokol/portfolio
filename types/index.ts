@@ -36,12 +36,12 @@ export type ProjectType = {
   tagline: string;
   slug: string;
   projectImage: {
-    alt: string;
+    alt: string | null;
     image: string;
-  }
-  projectUrl: string;
-  projectGithub: string;
+  };
+  projectUrl: string | null;
+  projectGithub: string | null;
   shortDescription: string;
-  fullDescription: string;
+  fullDescription: PortableTextBlock[];
   technologies: string[];
-}
+};

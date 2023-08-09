@@ -3,11 +3,11 @@ import { getJob } from "@/sanity/sanity.query";
 import type { JobType } from "@/types";
 import { PortableText } from "@portabletext/react";
 
-export default async function Job({ skills }: { skills: string[] }) {
+export default async function Jobs({ skills }: { skills: string[] }) {
   const job: JobType[] = await getJob();
 
   return (
-    <section className="mt-32">
+    <section className="mt-32 mb-20">
       <div className="mb-16">
         <h2 className="font-semibold text-4xl">Expertise</h2>
       </div>

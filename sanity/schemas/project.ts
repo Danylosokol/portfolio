@@ -33,6 +33,15 @@ const project = {
       name: "projectImage",
       title: "Project Image",
       type: "image",
+      description: "Upload photo for project",
+      options: {hotspot: true},
+      fields: [
+        {
+          name: "alt",
+          title: "Alt",
+          type: "string"
+        }
+      ]
     },
     {
       name: "projectUrl",
