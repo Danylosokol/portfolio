@@ -19,5 +19,4 @@ export default async function Projects() {
       </section>
     </section>
   );
-  return <div>Projects</div>;
 }
