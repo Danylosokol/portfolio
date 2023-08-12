@@ -10,7 +10,7 @@ export default function Project({ project }: { project: ProjectType }) {
   return (
     <>
       <article
-        className="border border-dashed hover:cursor-pointer flex flex-col"
+        className="border border-dashed border-secondary hover:cursor-pointer flex flex-col"
         onClick={() => setIsOpen(true)}
       >
         <Image

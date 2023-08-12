@@ -63,7 +63,12 @@ export default async function Jobs({ skills }: { skills: string[] }) {
           </p>
           <ul className="flex flex-wrap gap-3">
             {skills.map((skill, id) => (
-              <li key={id} className="bg-[#1d1d20] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">{skill}</li>
+              <li
+                key={id}
+                className="bg-[#1d1d20] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1"
+              >
+                {skill}
+              </li>
             ))}
           </ul>
         </div>

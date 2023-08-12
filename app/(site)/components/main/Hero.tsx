@@ -5,8 +5,8 @@ import type { ProfileType } from "@/types";
 
 export default async function Hero({ data }: { data: ProfileType }) {
   return (
-    <>
-      <div key={data._id} className="lg:max-w-2xl max-w-2xl">
+    <div className="max-w-6xl flex w-full justify-between">
+      <div key={data._id} className="lg:max-w-3xl max-w-2xl">
         <h1 className="text-3xl font-bold tracking-tight sm:text-5xl mb-6 lg:leading-[3.7rem] leading-tight lg:min-w-[700px] min-w-full">
           {data.headline}
         </h1>
@@ -39,7 +39,7 @@ export default async function Hero({ data }: { data: ProfileType }) {
           />
           <a
             href={`${data.resumeURL}?dl=${data.fullName}_resume`}
-            className="flex items-center justify-center gap-x-2 bg-[#1d1d20] border border-transparent hover:border-zinc-700 rounded-md duration-200 py-2 text-center cursor-cell font-medium"
+            className="flex items-center justify-center border border-secondary duration-500 hover:bg-primary-lighter py-2 text-center cursor-pointer font-medium gap-x-2"
           >
             <BiFile className="text-base" /> Donwload Resume
           </a>
@@ -60,6 +60,6 @@ export default async function Hero({ data }: { data: ProfileType }) {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   );
 }
