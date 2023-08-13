@@ -5,14 +5,14 @@ import type { ProfileType } from "@/types";
 
 export default async function Hero({ profile }: { profile: ProfileType[] }) {
   return (
-    <section className="mt-32 md:mt-36">
+    <section className="mt-32 md:mt-40 mb-40">
       {profile &&
         profile.map((data, indx) => (
-          <div key={`hero-${indx}`} className="max-w-6xl w-full">
-            <h1 className="text-[1.82rem] font-bold tracking-tight sm:text-5xl mb-6 md:mb-8 lg:leading-[3.7rem] leading-tight lg:min-w-[700px] min-w-full">
+          <div key={`hero-${indx}`} className="w-full">
+            <h1 className="text-[1.82rem] font-bold tracking-tight md:text-6xl mb-6 md:mb-8 lg:leading-[3.7rem] leading-tight lg:min-w-[700px] min-w-full">
               {data.headline}
             </h1>
-            <div className="flex flex-col-reverse md:flex-row w-full justify-between">
+            <div className="flex flex-col-reverse md:flex-row w-full justify-between gap-x-10">
               <div
                 key={data._id}
                 className="max-w-full md:max-w-xl lg:max-w-3xl flex flex-col flex-wrap justify-between"
