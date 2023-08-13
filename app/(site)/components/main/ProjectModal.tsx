@@ -6,7 +6,7 @@ import { PortableText } from "@portabletext/react";
 import { Dialog } from "@headlessui/react";
 import { TfiClose } from "react-icons/tfi";
 import { BsGithub } from "react-icons/bs";
-import {BiLinkAlt} from "react-icons/bi";
+import { BiLinkAlt } from "react-icons/bi";
 
 export default function ProjectModal({
   project,
@@ -57,7 +57,10 @@ export default function ProjectModal({
               </a>
             )}
 
-            <button className="flex items-center justify-center border border-secondary duration-500 hover:bg-primary-lighter py-2 px-4 text-center cursor-pointer font-medium gap-x-2 max-w-sm outline-none">
+            <button
+              className="flex items-center justify-center border border-secondary duration-500 hover:bg-primary-lighter py-2 px-4 text-center cursor-pointer font-medium gap-x-2 max-w-sm outline-none"
+              onClick={() => setIsOpen(false)}
+            >
               <TfiClose />
             </button>
           </div>
