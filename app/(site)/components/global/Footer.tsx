@@ -29,7 +29,7 @@ export default function Footer() {
           <a
             href="mailto:danylo.sokol2504@gmail.com"
             rel="noreferer noopener"
-            className="hover:text-white"
+            className="hover:text-white duration-500"
           >
             <BiEnvelope />
           </a>
