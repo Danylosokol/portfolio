@@ -9,7 +9,7 @@ import { BsGithub } from "react-icons/bs";
 export default function Footer() {
   return (
     <footer className="border-t border-dashed border-secondary">
-      <div className="max-w-7xl mx-auto flex lg:flex-row flex-col items-center lg:justify-between justify-center gap-y-4 md:px-16 py-10 text-secondary-bright">
+      <div className="max-w-7xl mx-auto flex lg:flex-row flex-col-reverse items-center lg:justify-between justify-center gap-y-4 md:px-16 py-10 text-secondary-bright">
         <small className="duration-200 font-mono">
           All rights reserved &copy; {new Date().getFullYear()}
         </small>
