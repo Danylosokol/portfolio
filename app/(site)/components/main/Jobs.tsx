@@ -7,7 +7,7 @@ export default async function Jobs({ skills }: { skills: string[] }) {
   const job: JobType[] = await getJob();
 
   return (
-    <section className="mb-20">
+    <section className="mb-40">
       <h2 className="font-semibold text-4xl mb-8">Experience</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className="border border-dashed border-secondary pt-5 pb-10 px-5">

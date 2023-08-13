@@ -36,6 +36,7 @@ export default async function Hero({ profile }: { profile: ProfileType[] }) {
                     <li key={id}>
                       <a
                         href={value}
+                        target="_blank"
                         rel="noreferer noopener"
                         className="flex items-center gap-x-3 hover:text-secondary-bright duration-300"
                       >
@@ -56,7 +57,7 @@ export default async function Hero({ profile }: { profile: ProfileType[] }) {
                 />
                 <a
                   href={`${data.resumeURL}?dl=${data.fullName}_resume`}
-                  className="flex items-center justify-center border border-secondary duration-500 hover:bg-primary-lighter py-2 px-4 text-center cursor-pointer font-medium gap-x-2 max-w-sm"
+                  className="flex items-center justify-center border border-secondary duration-500 hover:bg-primary-lighter py-2 px-4 text-center cursor-pointer font-medium gap-x-2 max-w-sm outline-none"
                 >
                   <BiFile className="text-base" /> Donwload Resume
                 </a>
