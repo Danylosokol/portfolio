@@ -45,7 +45,7 @@ export default async function Jobs({ skills }: { skills: string[] }) {
                     <small className="text-sm text-secondary-bright mt-2 tracking-widest uppercase">
                       {data.startDate && data.startDate.toString() + " -"}
                       {data.endDate
-                        ? data.startDate.toString()
+                        ? data.endDate.toString()
                         : data.startDate && !data.endDate
                         ? "Present"
                         : ""}
