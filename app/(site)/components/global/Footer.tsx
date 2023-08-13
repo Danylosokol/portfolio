@@ -25,7 +25,7 @@ export default function Footer() {
             </span>
           </a>
         </small>
-        <div className="flex gap-3 text-xl">
+        <div className="flex gap-5 md:gap-3 text-2xl md:text-xl">
           <a
             href="mailto:danylo.sokol2504@gmail.com"
             rel="noreferer noopener"
