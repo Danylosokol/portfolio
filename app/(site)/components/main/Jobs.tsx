@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getJob } from "@/sanity/sanity.query";
 import type { JobType } from "@/types";
 import { PortableText } from "@portabletext/react";
+import moment from "moment";
 
 export default async function Jobs({ skills }: { skills: string[] }) {
   const job: JobType[] = await getJob();
@@ -43,9 +44,10 @@ export default async function Jobs({ skills }: { skills: string[] }) {
                     <h3 className="text-xl font-bold">{data.jobTitle}</h3>
                     <p>{data.name}</p>
                     <small className="text-sm text-secondary-bright mt-2 tracking-widest uppercase">
-                      {data.startDate && data.startDate.toString() + " -"}
+                      {data.startDate &&
+                        moment(data.startDate).format("MMM YYYY") + " -"}
                       {data.endDate
-                        ? data.endDate.toString()
+                        ? moment(data.endDate).format("MMM YYYY")
                         : data.startDate && !data.endDate
                         ? "Present"
                         : ""}
@@ -59,7 +61,7 @@ export default async function Jobs({ skills }: { skills: string[] }) {
         <div className="border border-dashed border-secondary pt-5 pb-10 px-5">
           <h3 className="font-bold text-xl mb-2">My Skills</h3>
           <p className="text-zinc-400 max-w-lg mb-4">
-            I&apos;ve spent few years working on my skills. In no particular
+            I&apos;ve spent more than 3 years working on my skills. In no particular
             order, here are a few of them:
           </p>
           <ul className="flex flex-wrap gap-2 md:gap-5">

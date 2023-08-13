@@ -9,7 +9,7 @@ export default async function Hero({ profile }: { profile: ProfileType[] }) {
       {profile &&
         profile.map((data, indx) => (
           <div key={`hero-${indx}`} className="w-full">
-            <h1 className="text-[1.82rem] font-bold tracking-tight md:text-6xl mb-6 md:mb-8 lg:leading-[3.7rem] leading-tight lg:min-w-[700px] min-w-full">
+            <h1 className="text-3xl md:text-6xl font-bold tracking-tight mb-8 lg:leading-[3.7rem] leading-tight lg:min-w-[700px] min-w-full">
               {data.headline}
             </h1>
             <div className="flex flex-col-reverse md:flex-row w-full justify-between gap-x-10">
@@ -46,7 +46,7 @@ export default async function Hero({ profile }: { profile: ProfileType[] }) {
                   ))}
                 </ul>
               </div>
-              <div className="flex flex-col items-center mb-4 md:mb-0 md:-mt-20">
+              <div className="flex flex-col items-center mb-6 md:mb-0 md:-mt-20">
                 <Image
                   className="rounded-full mb-4 object-cover w-40 md:w-56 bg-top border border-secondary border-dashed"
                   src={data.profileImage.image}

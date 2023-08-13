@@ -10,9 +10,9 @@ export default async function Home() {
   return (
     <main className="max-w-7xl mx-auto lg:px-16 px-6">
       <Hero profile={profile} />
-      <div id="expertise" className="scroll-m-10"></div>
+      <div id="experience" className="scroll-m-32"></div>
       <Jobs skills={profile[0].skills} />
-      <div id="projects" className="scroll-m-10"></div>
+      <div id="projects" className="scroll-m-32"></div>
       <Projects />
     </main>
   );
