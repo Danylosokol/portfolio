@@ -25,7 +25,7 @@ export default async function Jobs({ skills }: { skills: string[] }) {
               .map((data) => (
                 <div
                   key={data._id}
-                  className="flex items-start lg:gap-x-6 gap-x-4 max-w-2xl relative before:absolute before:bottom-0 before:top-[4.5rem] before:left-7 before:w-[1px] before:h-[calc(100%-50px)] before:bg-zinc-800"
+                  className="flex items-start lg:gap-x-6 gap-x-4 max-w-2xl relative before:absolute before:bottom-0 before:top-[4.5rem] before:left-7 before:w-[1px] before:h-[calc(100%-50px)] before:bg-secondary"
                 >
                   <a
                     href={data.companyUrl}
@@ -42,7 +42,7 @@ export default async function Jobs({ skills }: { skills: string[] }) {
                   <div className="flex flex-col items-start">
                     <h3 className="text-xl font-bold">{data.jobTitle}</h3>
                     <p>{data.name}</p>
-                    <small className="text-sm text-zinc-500 mt-2 tracking-widest uppercase">
+                    <small className="text-sm text-secondary-bright mt-2 tracking-widest uppercase">
                       {data.startDate && data.startDate.toString() + " -"}
                       {data.endDate
                         ? data.startDate.toString()
