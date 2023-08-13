@@ -32,7 +32,7 @@ export default async function Jobs({ skills }: { skills: string[] }) {
                 <a
                   href={data.companyUrl}
                   rel="noreferer noopener"
-                  className="min-h-[60px] min-w-[60px] rounded-md overflow-clip relative"
+                  className="min-h-[60px] min-w-[60px] overflow-clip relative"
                 >
                   <Image
                     src={data.logo}
