@@ -6,7 +6,7 @@ export default async function Projects() {
   const projects: ProjectType[] = await getProjects();
 
   return (
-    <section className="mb-32">
+    <section className="mb-40">
       <h2 className="font-semibold text-4xl mb-8">
         Featured projects I&apos;ve worked on
       </h2>
