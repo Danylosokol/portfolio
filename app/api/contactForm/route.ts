@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
   console.log("in api route...");
-  const body = request.body;
+  const body = await request.json();
   const result = await sendMail(body);
   if (result.accepted) {
     return NextResponse.json({
