@@ -1,6 +1,7 @@
-import Image from "next/image";
+import { BiEnvelope, BiFile } from "react-icons/bi";
+
 import { HiLocationMarker } from "react-icons/hi";
-import { BiFile, BiEnvelope } from "react-icons/bi";
+import Image from "next/image";
 import type { ProfileType } from "@/types";
 
 export default async function Hero({ profile }: { profile: ProfileType[] }) {
@@ -59,7 +60,7 @@ export default async function Hero({ profile }: { profile: ProfileType[] }) {
                   href={`${data.resumeURL}?dl=${data.fullName}_resume`}
                   className="flex items-center justify-center border border-secondary duration-500 hover:bg-primary-lighter py-2 px-4 text-center cursor-pointer font-medium gap-x-2 max-w-sm outline-none"
                 >
-                  <BiFile className="text-base" /> Donwload Resume
+                  <BiFile className="text-base" /> Download Resume
                 </a>
               </div>
             </div>
