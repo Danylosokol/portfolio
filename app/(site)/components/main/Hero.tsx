@@ -57,7 +57,7 @@ export default async function Hero({ profile }: { profile: ProfileType[] }) {
                   alt={data.profileImage.alt}
                 />
                 <a
-                  href={`${data.resumeURL}?dl=${data.fullName}_resume`}
+                  href={`${data.resumeURL}?dl=${data.fullName.split(" ").join("-").toLowerCase()}-cv.pdf`}
                   className="flex items-center justify-center border border-secondary duration-500 hover:bg-primary-lighter py-2 px-4 text-center cursor-pointer font-medium gap-x-2 max-w-sm outline-none"
                 >
                   <BiFile className="text-base" /> Download Resume
